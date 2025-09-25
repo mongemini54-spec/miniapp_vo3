@@ -3,7 +3,7 @@ import os
 from openai import OpenAI
 
 # Charger la clé API depuis les secrets
-api_key = os.getenv(AIzaSyC7zVL5lNzVT5Re7mt74GuXoixFvGBHEk4)
+api_key = os.getenv("GEMINI_API_KEY")
 
 client = OpenAI(
     api_key=api_key,
