@@ -3,13 +3,12 @@ import os
 from openai import OpenAI
 
 # Charger la clé API depuis les secrets
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("GEMINI_API_KEY")  # <-- nom du secret
 
 client = OpenAI(
     api_key=api_key,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
-
 st.title("🎬 Mini-App VO3 avec Opal IA")
 st.write("Génère tes vidéos VO3 sans limite 🚀")
 
